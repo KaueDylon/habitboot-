@@ -21,8 +21,4 @@ public class UsuarioDTO {
 
     private Boolean status;
 
-    private List<HabitoEntity> habitos = new ArrayList<>();
-
-    public UsuarioDTO(String email, Boolean status) {
-    }
 }

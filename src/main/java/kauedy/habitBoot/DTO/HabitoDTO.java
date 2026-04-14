@@ -29,11 +29,11 @@ public class HabitoDTO {
 
     private Boolean status;
 
-    private Integer usuarioId;
+//    private Integer usuarioId;
 
-    private FrequenciaHabitoDTO frequencia;
+//    private FrequenciaHabitoDTO frequencia;
 
-    private List<ProgressoHabitoEntity> progresso = new ArrayList<>();
+//    private List<ProgressoHabitoEntity> progresso = new ArrayList<>();
 
 
 }
