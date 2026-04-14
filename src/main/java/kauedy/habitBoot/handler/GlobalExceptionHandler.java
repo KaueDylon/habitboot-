@@ -50,7 +50,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleHttpMessageNotReadableException(
             org.springframework.http.converter.HttpMessageNotReadableException e) {
 
-        String mensagem = "Erro ao interpretar JSON. Verifique os tipos dos campos.";
+        String mensagem = "Erro ao interpretar JSON. Verifique os tipos inseridos nos campos.";
 
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
