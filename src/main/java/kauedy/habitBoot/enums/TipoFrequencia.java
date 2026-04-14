@@ -5,7 +5,7 @@ public class TipoFrequencia {
     public enum TipoFreq {
         DIARIA,
         SEMANAL,
-        PERSONALIZADO
+        MENSAL
     }
 
 }

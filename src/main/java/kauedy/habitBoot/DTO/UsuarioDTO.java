@@ -15,11 +15,14 @@ import java.util.List;
 @Builder
 public class UsuarioDTO {
 
-
     private String email;
 
     private String senha;
 
+    private Boolean status;
+
     private List<HabitoEntity> habitos = new ArrayList<>();
 
+    public UsuarioDTO(String email, Boolean status) {
+    }
 }

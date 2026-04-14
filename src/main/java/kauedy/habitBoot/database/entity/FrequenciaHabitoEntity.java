@@ -4,6 +4,7 @@ import kauedy.habitBoot.enums.TipoFrequencia;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Frequencia_Habito")
@@ -22,11 +23,13 @@ public class FrequenciaHabitoEntity {
     @Enumerated(EnumType.STRING)
     private TipoFrequencia.TipoFreq tipo;
 
-    @Column(name = "frequencia_dia_semana")
-    private Integer diaSemana;
-
-    @Column(name = "frequencia_intervalo")
-    private Integer intervalo;
+    @ElementCollection
+    @CollectionTable(
+            name = "frequencia_dias_semana",
+            joinColumns = @JoinColumn(name = "frequencia_id")
+    )
+    @Column(name = "dia_semana")
+    private List<Integer> diasSemana;
 
     @OneToOne
     @JoinColumn(name = "habito_id", nullable = false, unique = true)

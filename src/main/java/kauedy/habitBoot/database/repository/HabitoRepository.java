@@ -9,9 +9,9 @@ public interface HabitoRepository extends JpaRepository<HabitoEntity, Integer> {
 
     Optional<HabitoEntity> findById(Long id);
 
-    Optional<HabitoEntity> findByName(String name);
+    Optional<HabitoEntity> findByNome(String nome);
 
-    Optional<HabitoEntity> findByNomeAndUsuarioId(String nome, Long usuarioId);
+    Optional<HabitoEntity> findByNomeAndUsuarioId(String nome, Integer usuarioId);
 
 
 }

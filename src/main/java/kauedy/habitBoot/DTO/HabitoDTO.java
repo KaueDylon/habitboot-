@@ -19,8 +19,6 @@ import java.util.List;
 @Builder
 public class HabitoDTO {
 
-    private Long id;
-
     private String nome;
 
     private String desc;
@@ -31,9 +29,9 @@ public class HabitoDTO {
 
     private Boolean status;
 
-    private UsuarioEntity usuario;
+    private Integer usuarioId;
 
-    private FrequenciaHabitoEntity frequencia;
+    private FrequenciaHabitoDTO frequencia;
 
     private List<ProgressoHabitoEntity> progresso = new ArrayList<>();
 

@@ -23,7 +23,7 @@ public class FrequenciaHabitoService {
 
         FrequenciaHabitoEntity frequencia = FrequenciaHabitoEntity.builder()
                 .tipo(frequenciaHabitoDTO.getTipo())
-                .diaSemana(frequenciaHabitoDTO.getDiaSemana())
+                .diasSemana(frequenciaHabitoDTO.getDiasSemana())
                 .habito(habito)
                 .build();
 

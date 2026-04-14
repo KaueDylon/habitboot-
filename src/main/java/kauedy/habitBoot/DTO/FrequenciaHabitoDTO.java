@@ -5,6 +5,7 @@ import kauedy.habitBoot.enums.TipoFrequencia;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,7 +16,7 @@ import javax.persistence.*;
 public class FrequenciaHabitoDTO {
 
     private TipoFrequencia.TipoFreq tipo;
-    private Integer diaSemana;
+    private List<Integer> diasSemana;
     private Integer intervalo;
 
 }
